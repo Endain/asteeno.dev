@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --base-width: 1024px;
+    --print-width: var(--base-width);
+    --print-height: calc(var(--base-width) * 1.294);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+@media print {
+    /*
+    html {
+        position: relative;
+
+        body {
+            width: var(--print-width);
+            height: var(--print-height)
+        }
+    }
+
+     */
+}
+
+@page {
+    size: letter;
+    margin: 0mm;
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}

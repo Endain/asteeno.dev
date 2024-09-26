@@ -1,5 +1,4 @@
-@page
-{
+@page {
     size: letter;
     margin: 0mm;
 }
@@ -18,8 +17,8 @@ html, body {
 }
 
 body {
-    -webkit-print-color-adjust:exact !important;
-    print-color-adjust:exact !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
 }
 
 ul {
@@ -65,7 +64,7 @@ ul {
     left: 50%;
     font-family: 'Arvo', serif;
     font-weight: bold;
-    font-size:1.75vh;
+    font-size: 1.75vh;
     transform: translate(-50%, calc(50% + 0.5vh));
     background-color: #ffffff;
     color: #333f49;
