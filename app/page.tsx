@@ -1,3 +1,6 @@
+import PrintableLink from "@/app/printable-link";
+import SkillSet from "@/app/skill-set";
+
 export default function Page() {
     return (
         <div className="flex flex-col justify-center h-full">
@@ -13,7 +16,7 @@ export default function Page() {
                 <section className="flex flex-col basis-1/3 bg-stone-50 px-8 py-10">
 
                     <section className="mb-8">
-                        <h3 className="text-2xl font-header uppercase mb-3">Contact</h3>
+                        <h3 className="text-2xl font-header uppercase mb-3">Personals</h3>
 
                         <h4 className="font-semibold">Address</h4>
                         <address className="not-italic">
@@ -22,16 +25,17 @@ export default function Page() {
                         </address>
 
                         <h4 className="font-semibold">Phone</h4>
-                        <a className="mb-3 inline-block border-b-neutral-300 border-b-2 border-dashed"
-                           href="tel:+14256987713">+1 425 698 7713</a>
+                        <PrintableLink to="tel:+14256987713" className="mb-3">+1 425 698 7713</PrintableLink>
 
                         <h4 className="font-semibold">Email</h4>
-                        <a className="mb-3 inline-block border-b-neutral-300 border-b-2 border-dashed"
-                           href="mailto:austin.steeno@gmail.com">austin.steeno@gmail.com</a>
+                        <PrintableLink to="mailto:austin.steeno@gmail.com"
+                                       className="mb-3">austin.steeno@gmail.com</PrintableLink>
 
-                        <div className="font-extrabold">Github</div>
-                        <a className="inline-block border-b-neutral-300 border-b-2 border-dashed"
-                           href="https://github.com/endain">github.com/endain</a>
+                        <div className="font-semibold">Website</div>
+                        <PrintableLink to="https://asteeno.dev" className="mb-3">asteeno.dev</PrintableLink>
+
+                        <div className="font-semibold">Github</div>
+                        <PrintableLink to="https://github.com/endain">github.com/endain</PrintableLink>
                     </section>
 
                     <section className="mb-8">
@@ -46,21 +50,55 @@ export default function Page() {
                         <h3 className="text-2xl font-header uppercase mb-3">Skills</h3>
 
                         <h4 className="font-semibold">Core Web Technologies</h4>
-                        <div>HTML5, CSS and Javascript</div>
-                        <div>Typescript and Sass</div>
-                        <div className="mb-3">Websockets</div>
+                        <SkillSet>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </SkillSet>
+                        <SkillSet>
+                            <PrintableLink to="https://www.typescriptlang.org/">TypeScript</PrintableLink>
+                            <PrintableLink to="https://sass-lang.com/">Sass</PrintableLink>
+                            <span>Canvas</span>
+                            <span>WebGL</span>
+                        </SkillSet>
+                        <SkillSet className="mb-3">
+                            <span>Websockets</span>
+                            <span>Webhooks</span>
+                            <span>HTTP</span>
+                        </SkillSet>
 
-                        <h4 className="font-semibold">Frameworks and Libraries</h4>
-                        <div className="mb-3">Angular, D3 and Highcharts</div>
-
-                        <h4 className="font-semibold">Graphics</h4>
-                        <div className="mb-3">Three.js, Pixi.js, Canvas, WebGL</div>
+                        <h4 className="font-semibold">Frontend</h4>
+                        <SkillSet>
+                            <PrintableLink to="https://angular.dev/">Angular</PrintableLink>
+                            <PrintableLink to="https://react.dev/">React</PrintableLink>
+                            <PrintableLink to="https://nextjs.org/">Next.js</PrintableLink>
+                        </SkillSet>
+                        <SkillSet className="mb-3">
+                            <PrintableLink to="https://d3js.org/">D3</PrintableLink>
+                            <PrintableLink to="https://www.highcharts.com/">Highcharts</PrintableLink>
+                            <PrintableLink to="https://threejs.org/">Three.js</PrintableLink>
+                            <PrintableLink to="https://pixijs.com/">Pixi.js</PrintableLink>
+                        </SkillSet>
 
                         <h4 className="font-semibold">Backend</h4>
-                        <div className="mb-3">Node, NestJS, MySQL, Redis</div>
+                        <SkillSet className="mb-3">
+                            <PrintableLink to="https://nodejs.org/en">Node.js</PrintableLink>
+                            <PrintableLink to="https://nestjs.com/">NestJS</PrintableLink>
+                            <PrintableLink to="https://www.mysql.com/">MySQL</PrintableLink>
+                            <PrintableLink to="https://redis.io/">Redis</PrintableLink>
+                        </SkillSet>
 
                         <h4 className="font-semibold">Tools</h4>
-                        <div>Git, Ngrok, Webstorm</div>
+                        <SkillSet className="mb-3">
+                            <PrintableLink to="https://git-scm.com/">Git</PrintableLink>
+                            <PrintableLink to="https://ngrok.com/">Ngrok</PrintableLink>
+                            <PrintableLink to="https://www.jetbrains.com/webstorm/">Webstorm</PrintableLink>
+                            <PrintableLink to="https://www.figma.com/">Figma</PrintableLink>
+                            <PrintableLink to="https://www.docker.com/">Docker</PrintableLink>
+                        </SkillSet>
+
+                        <h4 className="font-semibold">Other</h4>
+                        <div>Java, Python, C#, SQL, NoSQL</div>
                     </section>
 
                 </section>
