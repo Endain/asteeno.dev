@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import {contentFont, headerFont} from "@/src/fonts";
+import {contentFont, headerFont} from "@/app/fonts";
 
 export const metadata: Metadata = {
     title: "Austin Steeno | Software Engineer",

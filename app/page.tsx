@@ -1,9 +1,9 @@
-import PrintableLink from "@/src/components/printable-link";
-import SkillSet from "@/src/components/skill-set";
-import EmploymentPeriod from "@/src/components/employment-period";
-import Employer from "@/src/components/employer";
-import Details from "@/src/components/details";
-import Project from "@/src/components/project";
+import PrintableLink from "@/components/printable-link";
+import SkillSet from "@/components/skill-set";
+import EmploymentPeriod from "@/components/employment-period";
+import Employer from "@/components/employer";
+import Details from "@/components/details";
+import Project from "@/components/project";
 
 export default function Page() {
     return (
