@@ -8,14 +8,14 @@ import Project from "@/app/project";
 export default function Page() {
     return (
         <div className="flex flex-col justify-center h-full">
-            <header className="flex flex-col py-8 bg-steel-blue">
-                <div className="flex flex-col px-10 py-6 border-8 border-white self-center relative">
-                    <h1 className="self-center font-header font-medium text-6xl mb-1 text-white">Austin Steeno</h1>
-                    <h2 className="self-center font-header font-medium absolute top-full left-1/2 whitespace-nowrap -translate-y-1/2 -translate-x-1/2 bg-white text-steel-blue text-2xl py-0.5 px-3">Senior
+            <header className="flex flex-col pt-4 pb-10 sm:py-8 bg-steel-blue">
+                <div className="flex flex-col px-2 sm:px-10 pt-2 pb-6 sm:py-6 sm:border-8 border-white self-center relative">
+                    <h1 className="self-center font-header font-medium text-5xl sm:text-6xl mb-1 text-white">Austin Steeno</h1>
+                    <h2 className="self-center font-header font-medium absolute top-full left-1/2 whitespace-nowrap -translate-y-1/2 -translate-x-1/2 bg-white text-steel-blue text-xl sm:text-2xl py-0.5 px-3">Senior
                         Software Engineer</h2>
                 </div>
             </header>
-            <main className="flex basis-auto flex-grow flex-row max-w-base-width self-center">
+            <main className="flex basis-auto flex-grow flex-col-reverse md:flex-row print:flex-row max-w-base-width self-center">
 
                 <section className="flex flex-col basis-1/3 bg-stone-50 px-8 py-10">
 
