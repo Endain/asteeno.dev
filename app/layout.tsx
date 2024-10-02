@@ -3,8 +3,8 @@ import "./globals.css";
 import {contentFont, headerFont} from "@/src/fonts";
 
 export const metadata: Metadata = {
-    title: "Austin Steeno | Devlog",
-    description: "The work history, experiments and musings of Austin Steeno",
+    title: "Austin Steeno | Software Engineer",
+    description: "The professional history, experiments and musings of Austin Steeno"
 };
 
 export default function RootLayout({
@@ -14,7 +14,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className={`${contentFont.className} ${headerFont.variable} bg-stone-200 text-steel-blue print:w-print-width print:h-print-height`}>
+        <body
+            className={`${contentFont.className} ${headerFont.variable} bg-stone-200 text-steel-blue print:w-print-width print:h-print-height`}>
         {children}
         </body>
         </html>

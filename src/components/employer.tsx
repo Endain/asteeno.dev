@@ -1,6 +1,6 @@
 'use client'
 
-import PrintableLink from "@/app/printable-link";
+import PrintableLink from "@/src/components/printable-link";
 
 interface EmployerProps {
     className?: string,

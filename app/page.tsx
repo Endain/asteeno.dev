@@ -1,21 +1,26 @@
-import PrintableLink from "@/app/printable-link";
-import SkillSet from "@/app/skill-set";
-import EmploymentPeriod from "@/app/employment-period";
-import Employer from "@/app/employer";
-import Details from "@/app/details";
-import Project from "@/app/project";
+import PrintableLink from "@/src/components/printable-link";
+import SkillSet from "@/src/components/skill-set";
+import EmploymentPeriod from "@/src/components/employment-period";
+import Employer from "@/src/components/employer";
+import Details from "@/src/components/details";
+import Project from "@/src/components/project";
 
 export default function Page() {
     return (
         <div className="flex flex-col justify-center h-full">
             <header className="flex flex-col pt-4 pb-10 sm:py-8 bg-steel-blue">
-                <div className="flex flex-col px-2 sm:px-10 pt-2 pb-6 sm:py-6 sm:border-8 border-white self-center relative">
-                    <h1 className="self-center font-header font-medium text-5xl sm:text-6xl mb-1 text-white">Austin Steeno</h1>
-                    <h2 className="self-center font-header font-medium absolute top-full left-1/2 whitespace-nowrap -translate-y-1/2 -translate-x-1/2 bg-white text-steel-blue text-xl sm:text-2xl py-0.5 px-3">Senior
-                        Software Engineer</h2>
+                <div
+                    className="flex flex-col px-2 sm:px-10 pt-2 pb-6 sm:py-6 sm:border-8 border-white self-center relative">
+                    <h1 className="self-center font-header font-medium text-5xl sm:text-6xl mb-1 text-white">
+                        Austin Steeno
+                    </h1>
+                    <h2 className="self-center font-header font-medium absolute top-full left-1/2 whitespace-nowrap -translate-y-1/2 -translate-x-1/2 bg-white text-steel-blue text-xl sm:text-2xl py-0.5 px-3">
+                        Senior Software Engineer
+                    </h2>
                 </div>
             </header>
-            <main className="flex basis-auto flex-grow flex-col-reverse md:flex-row print:flex-row max-w-base-width self-center">
+            <main
+                className="flex basis-auto flex-grow flex-col-reverse md:flex-row print:flex-row max-w-base-width self-center">
 
                 <section className="flex flex-col basis-1/3 bg-stone-50 px-8 py-10">
 
@@ -115,39 +120,35 @@ export default function Page() {
                         <Employer link="https://corestack.io/">CoreStack</Employer>
                         <EmploymentPeriod role="Senior Software Engineer" start="2022" end="Present"></EmploymentPeriod>
                         <Details className="mb-6">Transitioned as key asset during acquisition and integration of
-                            Optio3,
-                            performed front-end design and implementation using Angular and TypeScript, contributed to
-                            legacy PHP codebase, focused on performant, intuitive data visualizations, dashboard
-                            development and creation of core UI components and transitioning existing features to the
-                            new component framework.
+                            Optio3, performed front-end design and implementation using Angular and TypeScript,
+                            contributed to legacy PHP codebase, focused on performant, intuitive data visualizations,
+                            dashboard development and creation of core UI components and transitioning existing features
+                            to the new component framework.
                         </Details>
 
                         <Employer
                             link="https://corestack.io/blog/corestack-accelerates-vision-and-growth-with-acquisition-of-optio3/">Optio3</Employer>
                         <EmploymentPeriod role="Senior Software Engineer" start="2018" end="2022"></EmploymentPeriod>
                         <Details className="mb-6">Worked in a lean, high-performing, agile startup environment,
-                            performed UI design and implementation using Angular and TypeScript, created advanced and highly
-                            performant data visualization tools and improved on bespoke data visualization tools
-                            rendered using canvas, as well as created, improved and maintained various core UI components,
-                            and contributed to backend platform in Java and Python.
+                            performed UI design and implementation using Angular and TypeScript, created advanced and
+                            highly performant data visualization tools and improved on bespoke data visualization tools
+                            rendered using canvas, as well as created, improved and maintained various core UI
+                            components, and contributed to backend platform in Java and Python.
                         </Details>
 
                         <Employer link="https://servicenow.com">ServiceNow</Employer>
                         <EmploymentPeriod role="Senior Software Development Engineer" start="2016"
                                           end="2018"></EmploymentPeriod>
                         <Details className="mb-2.5">Continued core UI component development, created data visualization
-                            and
-                            data analytics
-                            tools for CMDB, designed and implemented customizable no-code data processing and
-                            visualization pipeline, performed hiring interviews.
+                            and data analytics tools for CMDB, designed and implemented customizable no-code data
+                            processing and visualization pipeline, performed hiring interviews.
                         </Details>
                         <EmploymentPeriod role="Software Development Engineer" start="2014"
                                           end="2016"></EmploymentPeriod>
                         <Details className="mb-2.5">Lead development of CMDB Service Mapping (showcased in Knowledge
-                            keynote),
-                            assisted with integration and development of Neebula for service mapping, continued CMDB
-                            application development, created core UI components in Angular.js for widespread use in the
-                            CMDB application.
+                            keynote), assisted with integration and development of Neebula for service mapping,
+                            continued CMDB application development, created core UI components in Angular.js for
+                            widespread use in the CMDB application.
                         </Details>
                         <EmploymentPeriod role="Associate Software Development Engineer" start="2013"
                                           end="2014"></EmploymentPeriod>
