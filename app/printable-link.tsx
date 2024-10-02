@@ -1,12 +1,12 @@
 'use client'
 
 interface LinkProps {
-    to: string,
     className?: string,
-    children: React.ReactNode
+    children: React.ReactNode,
+    to: string
 }
 
-export default function PrintableLink({to, className, children}: LinkProps) {
+export default function PrintableLink({className = "", children, to}: LinkProps) {
     return (
         <span className={`${className} inline-block`}>
             <a className="inline-block screen:border-b-neutral-300 screen:border-b-2 screen:border-dashed screen:-mb-[2px]"

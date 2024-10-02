@@ -1,5 +1,9 @@
 import PrintableLink from "@/app/printable-link";
 import SkillSet from "@/app/skill-set";
+import EmploymentPeriod from "@/app/employment-period";
+import Employer from "@/app/employer";
+import Details from "@/app/details";
+import Project from "@/app/project";
 
 export default function Page() {
     return (
@@ -106,80 +110,70 @@ export default function Page() {
                 <section className="flex flex-col bg-white basis-2/3 px-8 py-10">
 
                     <section className="mb-8">
-                        <h3 className="text-2xl font-header uppercase mb-3">Work</h3>
+                        <h3 className="text-2xl font-header uppercase mb-3">Professional Experience</h3>
 
-                        <h4 className="font-semibold">September 2022 - Present</h4>
-                        <h4 className="font-semibold mb-1">
-                            <span>Senior Software Engineer</span>
-                            <span className="text-neutral-400 mx-1">@</span>
-                            <a href="https://corestack.io"
-                               className="border-b-neutral-300 border-b-2 border-dashed">Corestack</a>
-                        </h4>
-                        <div className="mb-6">Transitioned as key asset during acquisition of Optio3. Frontend
-                            design and
-                            implementation using Angular, Typescript, PHP, and Python and other technologies. Currently
-                            focusing
-                            on performant, intuitive visualizations, customizable dashboards and tools to drive quick
-                            understanding and resolution of cloud cost anomalies.
-                        </div>
+                        <Employer link="https://corestack.io/">CoreStack</Employer>
+                        <EmploymentPeriod role="Senior Software Engineer" start="2022" end="Present"></EmploymentPeriod>
+                        <Details className="mb-6">Transitioned as key asset during acquisition and integration of
+                            Optio3,
+                            performed front-end design and implementation using Angular and TypeScript, contributed to
+                            legacy PHP codebase, focused on performant, intuitive data visualizations, dashboard
+                            development and creation of core UI components and transitioning existing features to the
+                            new component framework.
+                        </Details>
 
-                        <h4 className="font-semibold">June 2018 - August 2022</h4>
-                        <h4 className="font-semibold mb-1">
-                            <span>Senior Software Engineer</span>
-                            <span className="text-neutral-400 mx-1">@</span>
-                            <a href="https://corestack.io/blog/corestack-accelerates-vision-and-growth-with-acquisition-of-optio3/?1/"
-                               className="border-b-neutral-300 border-b-2 border-dashed">Optio3</a>
-                        </h4>
-                        <div className="mb-6">Performed UI design and implementation using Angular and
-                            Typescript, created
-                            performant and bespoke canvas-based date visualization tools. Created clean, complex and
-                            feature-rich UI components in a small, high performing startup team.
-                        </div>
+                        <Employer
+                            link="https://corestack.io/blog/corestack-accelerates-vision-and-growth-with-acquisition-of-optio3/">Optio3</Employer>
+                        <EmploymentPeriod role="Senior Software Engineer" start="2018" end="2022"></EmploymentPeriod>
+                        <Details className="mb-6">Worked in a lean, high-performing, agile startup environment,
+                            performed UI design and implementation using Angular and TypeScript, created advanced and highly
+                            performant data visualization tools and improved on bespoke data visualization tools
+                            rendered using canvas, as well as created, improved and maintained various core UI components,
+                            and contributed to backend platform in Java and Python.
+                        </Details>
 
-                        <h4 className="font-semibold">July 2013 - June 2018</h4>
-                        <h4 className="font-semibold mb-1">
-                            <span>Senior Software Engineer</span>
-                            <span className="text-neutral-400 mx-1">@</span>
-                            <a href="https://servicenow.com"
-                               className="border-b-neutral-300 border-b-2 border-dashed">ServiceNow</a>
-                        </h4>
-                        <div>Lead UI and UX efforts for the CMDB team and newly formed Data Analytics
-                            and AI team.
-                            Created web-based data visualization tools for CMDB, conducted hiring interviews, led
-                            migration of
-                            UI to Angular.js framework and assisted in integration of acquired company Neebula.
-                        </div>
+                        <Employer link="https://servicenow.com">ServiceNow</Employer>
+                        <EmploymentPeriod role="Senior Software Development Engineer" start="2016"
+                                          end="2018"></EmploymentPeriod>
+                        <Details className="mb-2.5">Continued core UI component development, created data visualization
+                            and
+                            data analytics
+                            tools for CMDB, designed and implemented customizable no-code data processing and
+                            visualization pipeline, performed hiring interviews.
+                        </Details>
+                        <EmploymentPeriod role="Software Development Engineer" start="2014"
+                                          end="2016"></EmploymentPeriod>
+                        <Details className="mb-2.5">Lead development of CMDB Service Mapping (showcased in Knowledge
+                            keynote),
+                            assisted with integration and development of Neebula for service mapping, continued CMDB
+                            application development, created core UI components in Angular.js for widespread use in the
+                            CMDB application.
+                        </Details>
+                        <EmploymentPeriod role="Associate Software Development Engineer" start="2013"
+                                          end="2014"></EmploymentPeriod>
+                        <Details>Prototyped major new feature "CMDB Dashboard" utilizing D3 and bespoke drag and drop
+                            system, performed additional CMDB application development.
+                        </Details>
                     </section>
 
                     <section>
-                        <h3 className="text-2xl font-header uppercase mb-3">Projects</h3>
+                        <h3 className="text-2xl font-header uppercase mb-3">Personal Projects</h3>
 
-                        <h4 className="font-semibold mb-1">Weekly Election System | Twitch | 2023</h4>
-                        <div className="mb-2">A scalable and extensible realtime voting system including dynamic
-                            overlays,
-                            web based control panels, an extension and hosted backend. Allowed chat to vote weekly for a
-                            specific character to be "captain" of the stream for the week.
-                        </div>
-                        <ul className="mb-6 pl-4">
-                            <li className="list-disc">Dynamic overlays using a combination of CSS and WebGL</li>
-                            <li className="list-disc">Polished extension for user voting, leaderboards and character
-                                information in
-                                realtime using websockets
-                            </li>
-                            <li className="list-disc">Node + NestJS based backend, MySQL database, REST APIs and
-                                Websockets,
-                                custom CLI
-                                tools, all Typescript
-                            </li>
-                        </ul>
+                        <Project date="2023">Twitch Election System</Project>
+                        <Details className="mb-6">Created a scalable and extensible real-time voting and virtual
+                            currency system including dynamic overlays, cloud-based control panels, a Twitch extension
+                            and cloud-hosted backend. Tracked viewers and awarded virtual currency based on
+                            subscriptions purchased. Kept extensive, detailed transaction records to provide
+                            leaderboards and breakdowns. Created a build tool that generated a type-safe ORM based on
+                            SQL schema. Utilized varied skills, including Websockets, Webhooks, API development and
+                            integration, Node.js, Typescript, WebGL and shaders, SQL and more.
+                        </Details>
 
-                        <h4 className="font-semibold mb-1">Clip Manager Extension | Twitch, Chrome | 2016</h4>
-                        <div>Created a Chrome extension that would listen for any clips taken and
-                            automatically
-                            save the details into local storage. Provided a clean, easy-to-use interface to search,
-                            filter, view
-                            and even download clips.
-                        </div>
+                        <Project date="2016">Twitch Clip Manager</Project>
+                        <Details>Created a Chrome extension that would listen for any clips taken and automatically save
+                            the details into local storage. Provided a clean, easy-to-use interface to search, filter,
+                            view and download clips.
+                        </Details>
                     </section>
 
                 </section>
