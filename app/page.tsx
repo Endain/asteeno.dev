@@ -10,11 +10,11 @@ export default function Page() {
         <div className="flex flex-col justify-center h-full">
             <header className="flex flex-col pt-4 pb-10 sm:py-8 bg-steel-blue">
                 <div
-                    className="flex flex-col px-2 sm:px-10 pt-2 pb-6 sm:py-6 sm:border-8 border-white self-center relative">
-                    <h1 className="self-center font-header font-medium text-5xl sm:text-6xl mb-1 text-white">
+                    className="flex flex-col px-2 sm:px-10 print:px-12s pt-2 pb-6 sm:py-6 sm:border-8 print:border-[6px] border-white self-center relative">
+                    <h1 className="self-center font-header font-medium text-5xl sm:text-6xl print:text-5xl mb-1 text-white">
                         Austin Steeno
                     </h1>
-                    <h2 className="self-center font-header font-medium absolute top-full left-1/2 whitespace-nowrap -translate-y-1/2 -translate-x-1/2 bg-white text-steel-blue text-xl sm:text-2xl py-0.5 px-3">
+                    <h2 className="self-center font-header font-medium absolute top-full left-1/2 whitespace-nowrap -translate-y-1/2 -translate-x-1/2 bg-white text-steel-blue text-xl sm:text-2xl print:text-lg py-0.5 px-3">
                         Senior Software Engineer
                     </h2>
                 </div>
@@ -22,7 +22,7 @@ export default function Page() {
             <main
                 className="flex basis-auto flex-grow flex-col-reverse md:flex-row print:flex-row max-w-base-width self-center">
 
-                <section className="flex flex-col basis-1/3 bg-stone-50 px-8 py-10">
+                <section className="flex flex-col basis-1/3 bg-stone-50 px-8 py-10 print:pb-0 print:pt-6">
 
                     <section className="mb-8">
                         <h3 className="text-2xl font-header uppercase mb-3">Personals</h3>
@@ -112,10 +112,10 @@ export default function Page() {
 
                 </section>
 
-                <section className="flex flex-col bg-white basis-2/3 px-8 py-10">
+                <section className="flex flex-col bg-white basis-2/3 px-8 py-10 print:pb-0 print:pt-6">
 
                     <section className="mb-8">
-                        <h3 className="text-2xl font-header uppercase mb-3">Professional Experience</h3>
+                        <h3 className="text-2xl font-header uppercase mb-3">Career Experience</h3>
 
                         <Employer link="https://corestack.io/">CoreStack</Employer>
                         <EmploymentPeriod role="Senior Software Engineer" start="2022" end="Present"></EmploymentPeriod>
@@ -158,22 +158,25 @@ export default function Page() {
                     </section>
 
                     <section>
-                        <h3 className="text-2xl font-header uppercase mb-3">Personal Projects</h3>
+                        <h3 className="text-2xl font-header uppercase mb-3">Freelance Projects</h3>
+
+                        <Project date="2024">Video Processing Pipeline</Project>
+                        <Details className="mb-6"> Created an automated video processing pipeline using FFMPEG and node.js, hosted on
+                            Firebase. The system took raw sports game footage from Firestore and referenced against a
+                            gameplay rundown stored in noSQL, used FFMPEG to generate short game highlight video clips,
+                            optimized them for streaming and stored the resulting clips and associated metadata in
+                            Firestore and noSQL. Containerized application using Docker, ran on Google Cloud Run using
+                            nightly trigger.
+                        </Details>
 
                         <Project date="2023">Twitch Election System</Project>
-                        <Details className="mb-6">Created a scalable and extensible real-time voting and virtual
+                        <Details>Created a scalable and extensible real-time voting and virtual
                             currency system including dynamic overlays, cloud-based control panels, a Twitch extension
                             and cloud-hosted backend. Tracked viewers and awarded virtual currency based on
                             subscriptions purchased. Kept extensive, detailed transaction records to provide
                             leaderboards and breakdowns. Created a build tool that generated a type-safe ORM based on
                             SQL schema. Utilized varied skills, including Websockets, Webhooks, API development and
                             integration, Node.js, Typescript, WebGL and shaders, SQL and more.
-                        </Details>
-
-                        <Project date="2016">Twitch Clip Manager</Project>
-                        <Details>Created a Chrome extension that would listen for any clips taken and automatically save
-                            the details into local storage. Provided a clean, easy-to-use interface to search, filter,
-                            view and download clips.
                         </Details>
                     </section>
 
