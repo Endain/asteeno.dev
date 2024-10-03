@@ -10,7 +10,7 @@ export default function Page() {
         <div className="flex flex-col justify-center h-full">
             <header className="flex flex-col pt-4 pb-10 sm:py-8 bg-steel-blue">
                 <div
-                    className="flex flex-col px-2 sm:px-10 print:px-12s pt-2 pb-6 sm:py-6 sm:border-8 print:border-[6px] border-white self-center relative">
+                    className="flex flex-col px-2 sm:px-10 print:px-12 pt-2 pb-6 sm:py-6 sm:border-8 print:border-[6px] border-white self-center relative">
                     <h1 className="self-center font-header font-medium text-5xl sm:text-6xl print:text-5xl mb-1 text-white">
                         Austin Steeno
                     </h1>
@@ -98,16 +98,32 @@ export default function Page() {
                         </SkillSet>
 
                         <h4 className="font-semibold">Tools</h4>
-                        <SkillSet className="mb-3">
+                        <SkillSet>
                             <PrintableLink to="https://git-scm.com/">Git</PrintableLink>
                             <PrintableLink to="https://ngrok.com/">Ngrok</PrintableLink>
                             <PrintableLink to="https://www.jetbrains.com/webstorm/">Webstorm</PrintableLink>
+                        </SkillSet>
+                        <SkillSet className="mb-3">
                             <PrintableLink to="https://www.figma.com/">Figma</PrintableLink>
                             <PrintableLink to="https://www.docker.com/">Docker</PrintableLink>
+                            <PrintableLink to="https://www.ffmpeg.org/">FFmpeg</PrintableLink>
+                        </SkillSet>
+
+                        <h4 className="font-semibold">Cloud Platforms</h4>
+                        <SkillSet className="mb-3">
+                            <PrintableLink to="https://firebase.google.com/">Firebase</PrintableLink>
+                            <PrintableLink to="https://cloud.google.com/">GCP</PrintableLink>
+                            <PrintableLink to="https://aws.amazon.com//">AWS</PrintableLink>
                         </SkillSet>
 
                         <h4 className="font-semibold">Other</h4>
-                        <div>Java, Python, C#, SQL, NoSQL</div>
+                        <SkillSet>
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>C#</span>
+                            <span>SQL</span>
+                            <span>NoSql</span>
+                        </SkillSet>
                     </section>
 
                 </section>
@@ -161,7 +177,8 @@ export default function Page() {
                         <h3 className="text-2xl font-header uppercase mb-3">Freelance Projects</h3>
 
                         <Project date="2024">Video Processing Pipeline</Project>
-                        <Details className="mb-6"> Created an automated video processing pipeline using FFMPEG and node.js, hosted on
+                        <Details className="mb-6"> Created an automated video processing pipeline using FFMPEG and
+                            node.js, hosted on
                             Firebase. The system took raw sports game footage from Firestore and referenced against a
                             gameplay rundown stored in noSQL, used FFMPEG to generate short game highlight video clips,
                             optimized them for streaming and stored the resulting clips and associated metadata in
