@@ -11,11 +11,28 @@ const config: Config = {
             colors: {
                 background: "var(--background)",
                 foreground: "var(--foreground)",
-                'steel-blue': '#333f49'
+                'oxford-blue': {
+                    '50': '#f3f7f8',
+                    '100': '#dfeaee',
+                    '200': '#c3d5de',
+                    '300': '#99b7c7',
+                    '400': '#6890a8',
+                    '500': '#4d758d',
+                    '600': '#436177',
+                    '700': '#3b5163',
+                    '800': '#364654',
+                    '900': '#313d49',
+                    '910': '#29333d',
+                    '950': '#1d262f',
+                },
+
             },
             fontFamily: {
                 header: ['var(--font-header)'],
                 content: ['var(--font-content)']
+            },
+            fontSize: {
+                '2xs': '0.66rem',
             },
             screens: {
                 print: {raw: 'print'},
