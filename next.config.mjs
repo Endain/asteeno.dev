@@ -9,6 +9,12 @@ const nextConfig = {
 
         // Important: return the modified config
         return config;
+    },
+    images: {
+        unoptimized: true
+    },
+    devIndicators: {
+        appIsrStatus: false
     }
 };
 

@@ -7,6 +7,6 @@ interface DetailsProps {
 
 export default function Details({className = "", children}: DetailsProps) {
     return (
-        <div className={`${className} text-sm sm:text-base print:text-sm`}>{children}</div>
+        <div className={`${className} leading-snug print:text-sm`}>{children}</div>
     );
 }

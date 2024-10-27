@@ -18,6 +18,6 @@ export default function SkillSet({className = "", children}: SkillSetProps) {
     });
 
     return (
-        <div className={className}>{seperatedChildren}</div>
+        <div className={`${className} print:text-sm`}>{seperatedChildren}</div>
     );
 }

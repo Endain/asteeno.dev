@@ -5,47 +5,97 @@ import Employer from "@/components/employer";
 import Details from "@/components/details";
 import Project from "@/components/project";
 import Image from "next/image";
+import me from './me.jpg'
+import {DevicePhoneMobileIcon, EnvelopeIcon, GlobeAltIcon, MapPinIcon, PhoneIcon} from "@heroicons/react/24/outline";
 
 export default function Page() {
     return (
         <div className="flex flex-col justify-center h-full">
-            <header className="flex flex-col pt-4 pb-10 sm:py-8 bg-oxford-blue-900">
-                <div
-                    className="flex flex-col px-2 sm:px-10 print:px-12 pt-2 pb-6 sm:py-6 sm:border-8 print:border-[6px] border-white self-center relative">
-                    <h1 className="self-center font-header font-medium text-5xl sm:text-6xl print:text-5xl mb-1 text-white">
-                        Austin Steeno
-                    </h1>
-                    <h2 className="self-center font-header font-medium absolute top-full left-1/2 whitespace-nowrap -translate-y-1/2 -translate-x-1/2 bg-white text-oxford-blue-900 text-xl sm:text-2xl print:text-lg py-0.5 px-3">
-                        Senior Software Engineer
-                    </h2>
+            <header className="flex flex-col bg-gradient-to-r from-oxford-blue-950 to-oxford-blue-900">
+                <div className="flex flex-row max-w-base-width self-center">
+                    <div className="hidden print:flex md:flex print:basis-2/7 md:basis-2/7 p-8 justify-center">
+                        <div className="flex flex-col aspect-square justify-center max-w-full">
+                            <div className="flex flex-row aspect-square relative">
+                                <Image className="absolute top-0 left-0 w-full h-full rounded-full" src={me}
+                                       alt="Austin Steeno"></Image>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col print:basis-5/7 md:basis-5/7 p-8 justify-center">
+                        <h1 className="leading-none font-header font-medium whitespace-nowrap text-5xl print:text-4xl md:text-4xl text-white ">
+                            Austin Steeno
+                        </h1>
+                        <h2 className="leading-none font-header whitespace-nowrap text-white text-2xl print:text-lg md:text-lg mb-6 print:mb-4 md:mb-4">
+                            Senior Software Engineer
+                        </h2>
+                        <div className="leading-snug print:text-sm text-oxford-blue-50">
+                            Experienced software engineer with a proven track record in delivering high-quality,
+                            performant user interfaces. Proficient in web standards and skilled in developing scalable,
+                            interactive web applications using various technologies, from JavaScript to cutting-edge
+                            frameworks. With a strong design sensibility and a passion for enhancing user and developer
+                            experiences, he is adept at solving complex problems and architecting robust, scalable
+                            solutions.
+                        </div>
+                    </div>
                 </div>
             </header>
             <main
                 className="flex basis-auto flex-grow flex-col-reverse md:flex-row print:flex-row max-w-base-width self-center">
 
-                <section className="flex flex-col basis-1/3 bg-stone-50 px-8 pt-6 pb-10 print:pb-0">
+                <section className="flex flex-col basis-2/7 bg-stone-50 pl-8 pr-2 pt-6 pb-10 print:pb-0 print:pr-8">
 
                     <section className="mb-8">
                         <h3 className="text-2xl font-header uppercase mb-3">Personals</h3>
 
-                        <h4 className="font-semibold">Address</h4>
-                        <address className="not-italic">
-                            <div>12027 78th Ave S</div>
-                            <div className="mb-3">Seattle WA 98178</div>
-                        </address>
+                        <div className="flex flex-row space-x-1">
+                            <MapPinIcon className="size-6 print:size-5 text-oxford-blue-700"></MapPinIcon>
+                            <address className="not-italic">
+                                <div className="mb-3 print:text-sm">Seattle, Washington</div>
+                            </address>
+                        </div>
 
-                        <h4 className="font-semibold">Phone</h4>
-                        <PrintableLink to="tel:+14256987713" className="mb-3">+1 425 698 7713</PrintableLink>
+                        <div className="flex flex-row space-x-1">
+                            <DevicePhoneMobileIcon
+                                className="size-6 print:size-5 text-oxford-blue-700"></DevicePhoneMobileIcon>
+                            <PrintableLink to="tel:+14256987713" className="mb-3 print:text-sm">+1 425 698
+                                7713</PrintableLink>
+                        </div>
 
-                        <h4 className="font-semibold">Email</h4>
-                        <PrintableLink to="mailto:austin.steeno@gmail.com"
-                                       className="mb-3">austin.steeno@gmail.com</PrintableLink>
+                        <div className="flex flex-row space-x-1">
+                            <EnvelopeIcon className="size-6 print:size-5 text-oxford-blue-700"></EnvelopeIcon>
+                            <PrintableLink to="mailto:austin.steeno@gmail.com"
+                                           className="mb-3 print:text-sm">austin.steeno@gmail.com</PrintableLink>
+                        </div>
 
-                        <div className="font-semibold">Website</div>
-                        <PrintableLink to="https://asteeno.dev" className="mb-3">asteeno.dev</PrintableLink>
+                        <div className="flex flex-row space-x-1">
+                            <GlobeAltIcon className="size-6 print:size-5 text-oxford-blue-700"></GlobeAltIcon>
+                            <PrintableLink to="https://asteeno.dev"
+                                           className="mb-3 print:text-sm">asteeno.dev</PrintableLink>
+                        </div>
 
-                        <div className="font-semibold">Github</div>
-                        <PrintableLink to="https://github.com/endain">github.com/endain</PrintableLink>
+                        <div className="flex flex-row space-x-1">
+                            <svg className="m-0.5 size-5 print:size-4 fill-current oxford-blue-700" role="img"
+                                 viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg"><title>GitHub</title>
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                            <PrintableLink to="https://github.com/endain"
+                                           className="mb-3 print:text-sm">github.com/endain</PrintableLink>
+                        </div>
+
+                        <div className="flex flex-row space-x-1">
+                            <svg className="m-0.5 size-5 print:size-4 fill-current oxford-blue-700" role="img"
+                                 viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <title>LinkedIn</title>
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <PrintableLink
+                                to="https://www.linkedin.com/in/asteeno/"
+                                className="print:text-sm">linkedin.com/in/asteeno/</PrintableLink>
+                        </div>
                     </section>
 
                     <section className="mb-8">
@@ -53,7 +103,7 @@ export default function Page() {
 
                         <h4 className="font-semibold">2010 - 2013</h4>
                         <h4 className="font-semibold">Arizona State University</h4>
-                        <div>B.S.E. in Computer Systems Engineering</div>
+                        <div className="print:text-sm">B.S.E. in Computer Systems Engineering</div>
                     </section>
 
                     <section>
@@ -118,59 +168,68 @@ export default function Page() {
                         </SkillSet>
 
                         <h4 className="font-semibold">Other</h4>
-                        <SkillSet>
+                        <SkillSet className="mb-3">
                             <span>Java</span>
                             <span>Python</span>
                             <span>C#</span>
                             <span>SQL</span>
                             <span>NoSql</span>
                         </SkillSet>
+
+                        <h4 className="font-semibold">Soft Skills</h4>
+                        <SkillSet>
+                            <span>Problem Solving</span>
+                            <span>Attention To Detail</span>
+                            <span>Critical Thinking</span>
+                            <span>Self Management</span>
+                            <span>Communication</span>
+                            <span>Continuous Learning</span>
+                            <span>Creativity</span>
+                        </SkillSet>
                     </section>
 
                 </section>
 
-                <section className="flex flex-col bg-white basis-2/3 px-8 pt-6 pb-10 print:pb-0">
+                <section className="flex flex-col bg-white basis-5/7 px-8 pt-6 pb-10 print:pb-0">
 
                     <section className="mb-8">
                         <h3 className="text-2xl font-header uppercase mb-3">Career Experience</h3>
 
                         <Employer link="https://corestack.io/">CoreStack</Employer>
                         <EmploymentPeriod role="Senior Software Engineer" start="2022" end="Present"></EmploymentPeriod>
-                        <Details className="mb-6">Transitioned as key asset during acquisition and integration of
-                            Optio3, performed front-end design and implementation using Angular and TypeScript,
-                            contributed to legacy PHP codebase, focused on performant, intuitive data visualizations,
-                            dashboard development and creation of core UI components and transitioning existing features
-                            to the new component framework.
+                        <Details className="mb-6">Key asset in the Optio3 acquisition, drove front-end design and
+                            implementation with Angular and TypeScript. Enhanced the legacy PHP codebase, developed
+                            performant data visualizations, dashboards, and core UI components, transitioning features
+                            to the new framework and turning high-value concepts into reality.
                         </Details>
 
                         <Employer
                             link="https://corestack.io/blog/corestack-accelerates-vision-and-growth-with-acquisition-of-optio3/">Optio3</Employer>
                         <EmploymentPeriod role="Senior Software Engineer" start="2018" end="2022"></EmploymentPeriod>
-                        <Details className="mb-6">Worked in a lean, high-performing, agile startup environment,
-                            performed UI design and implementation using Angular and TypeScript, created advanced and
-                            highly performant data visualization tools and improved on bespoke data visualization tools
-                            rendered using canvas, as well as created, improved and maintained various core UI
-                            components, and contributed to backend platform in Java and Python.
+                        <Details className="mb-6">Worked in a lean, agile startup, focusing on UI design and
+                            implementation with Angular and TypeScript. Developed advanced, high-performance data
+                            visualization tools, expanding options for customers and enabling visualization of
+                            large-scale datasets. Enhanced bespoke canvas-rendered visuals, created and maintained core
+                            UI components, and contributed to the backend in Java and Python.
                         </Details>
 
                         <Employer link="https://servicenow.com">ServiceNow</Employer>
                         <EmploymentPeriod role="Senior Software Development Engineer" start="2016"
                                           end="2018"></EmploymentPeriod>
-                        <Details className="mb-2.5">Continued core UI component development, created data visualization
-                            and data analytics tools for CMDB, designed and implemented customizable no-code data
-                            processing and visualization pipeline, performed hiring interviews.
+                        <Details className="mb-2.5">Developed core UI components and data visualization tools for the
+                            CMDB, conducted hiring interviews, and designed an extendable low-code data processing and
+                            visualization pipeline, unlocking new data analysis paradigms for customers.
                         </Details>
                         <EmploymentPeriod role="Software Development Engineer" start="2014"
                                           end="2016"></EmploymentPeriod>
-                        <Details className="mb-2.5">Lead development of CMDB Service Mapping (showcased in Knowledge
-                            keynote), assisted with integration and development of Neebula for service mapping,
-                            continued CMDB application development, created core UI components in Angular.js for
-                            widespread use in the CMDB application.
+                        <Details className="mb-2.5">Led CMDB Service Mapping development (showcased in the Knowledge
+                            keynote), contributed to Neebula integration, and created core Angular.js UI components for
+                            other CMDB developers, enhancing product continuity and application performance.
                         </Details>
                         <EmploymentPeriod role="Associate Software Development Engineer" start="2013"
                                           end="2014"></EmploymentPeriod>
-                        <Details>Prototyped major new feature "CMDB Dashboard" utilizing D3 and bespoke drag and drop
-                            system, performed additional CMDB application development.
+                        <Details>Prototyped the CMDB Dashboard with D3 and a custom drag-and-drop system, drove
+                            Angular.js adoption, and contributed to CMDB application development.
                         </Details>
                     </section>
 
@@ -178,23 +237,20 @@ export default function Page() {
                         <h3 className="text-2xl font-header uppercase mb-3">Freelance Projects</h3>
 
                         <Project date="2024">Video Processing Pipeline</Project>
-                        <Details className="mb-6"> Created an automated video processing pipeline using FFMPEG and
-                            node.js, hosted on
-                            Firebase. The system took raw sports game footage from Firestore and referenced against a
-                            gameplay rundown stored in noSQL, used FFMPEG to generate short game highlight video clips,
-                            optimized them for streaming and stored the resulting clips and associated metadata in
-                            Firestore and noSQL. Containerized application using Docker, ran on Google Cloud Run using
-                            nightly trigger.
+                        <Details className="mb-6">Developed an automated video processing pipeline using FFMPEG and
+                            Node.js, hosted on Firebase/GCP. The system processed raw sports footage from Firebase Cloud
+                            Storage, referenced gameplay rundowns in Firestore, and generated streaming-optimized
+                            highlight clips stored back in Cloud Storage, with metadata in Firestore. Containerized with
+                            Docker and deployed on Google Cloud Run with a nightly trigger.
                         </Details>
 
                         <Project date="2023">Twitch Election System</Project>
-                        <Details>Created a scalable and extensible real-time voting and virtual
-                            currency system including dynamic overlays, cloud-based control panels, a Twitch extension
-                            and cloud-hosted backend. Tracked viewers and awarded virtual currency based on
-                            subscriptions purchased. Kept extensive, detailed transaction records to provide
-                            leaderboards and breakdowns. Created a build tool that generated a type-safe ORM based on
-                            SQL schema. Utilized varied skills, including Websockets, Webhooks, API development and
-                            integration, Node.js, Typescript, WebGL and shaders, SQL and more.
+                        <Details>Developed a scalable real-time voting and virtual currency system with dynamic
+                            overlays, web-based control panels, a Twitch extension, and a cloud-hosted backend. Tracked
+                            viewers and awarded virtual currency for subscriptions, maintaining detailed transaction and
+                            voting records for leaderboards. Created an SDK to generate a type-safe ORM from SQL schema.
+                            Utilized skills in Websockets, Webhooks, API development, Node.js, TypeScript, WebGL, and
+                            SQL.
                         </Details>
                     </section>
 
