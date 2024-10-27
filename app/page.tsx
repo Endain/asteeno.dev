@@ -32,9 +32,8 @@ export default function Page() {
                             Experienced software engineer with a proven track record in delivering high-quality,
                             performant user interfaces. Proficient in web standards and skilled in developing scalable,
                             interactive web applications using various technologies, from JavaScript to cutting-edge
-                            frameworks. With a strong design sensibility and a passion for enhancing user and developer
-                            experiences, he is adept at solving complex problems and architecting robust, scalable
-                            solutions.
+                            frameworks. Strong design sensibility and a passion for enhancing user and developer
+                            experiences, adept at solving complex problems and architecting robust, scalable solutions.
                         </div>
                     </div>
                 </div>
