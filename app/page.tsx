@@ -16,7 +16,7 @@ export default function Page() {
                     <div className="hidden print:flex md:flex print:basis-2/7 md:basis-2/7 p-8 justify-center">
                         <div className="flex flex-col aspect-square justify-center max-w-full">
                             <div className="flex flex-row aspect-square relative">
-                                <Image className="absolute top-0 left-0 w-full h-full rounded-full" src={me}
+                                <Image className="absolute top-0 left-0 w-full h-full rounded-full object-cover" style={{"overflowClipMargin": "unset"}} src={me}
                                        alt="Austin Steeno"></Image>
                             </div>
                         </div>
