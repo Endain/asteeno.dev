@@ -17,20 +17,6 @@
     }
 }
 
-@media print {
-    /*
-    html {
-        position: relative;
-
-        body {
-            width: var(--print-width);
-            height: var(--print-height)
-        }
-    }
-
-     */
-}
-
 @page {
     size: letter;
     margin: 0mm;
