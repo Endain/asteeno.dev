@@ -195,7 +195,7 @@ export default function Page() {
                         <h3 className="text-2xl font-header uppercase mb-3">Career Experience</h3>
 
                         <Employer link="https://corestack.io/">CoreStack</Employer>
-                        <EmploymentPeriod role="Senior Software Engineer" start="2022" end="Present"></EmploymentPeriod>
+                        <EmploymentPeriod role="Senior Software Engineer" start="2022" end="2025"></EmploymentPeriod>
                         <Details className="mb-6">Key asset in the Optio3 acquisition, drove front-end design and
                             implementation with Angular and TypeScript. Enhanced the legacy PHP codebase, developed
                             performant data visualizations, dashboards, and core UI components, transitioning features
