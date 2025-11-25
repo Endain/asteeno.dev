@@ -49,7 +49,7 @@ export default function Page() {
                         <div className="flex flex-row space-x-1">
                             <MapPinIcon className="size-6 print:size-5 text-oxford-blue-700"></MapPinIcon>
                             <address className="not-italic">
-                                <div className="mb-3 print:text-sm">Seattle, Washington</div>
+                                <div className="mb-3 print:text-sm">Sacramento, California</div>
                             </address>
                         </div>
 
