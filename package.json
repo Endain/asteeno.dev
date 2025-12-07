@@ -1,6 +1,6 @@
 {
   "name": "asteeno.dev",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,16 +10,16 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
-    "next": "15.0.1",
-    "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021"
+    "next": "^16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.1",
+    "eslint": "^9",
+    "eslint-config-next": "^16.0.7",
     "html-loader": "^5.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
