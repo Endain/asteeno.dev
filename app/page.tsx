@@ -27,14 +27,14 @@ export default function Page() {
                             Austin Steeno
                         </h1>
                         <h2 className="leading-none font-header whitespace-nowrap text-white text-2xl print:text-lg md:text-lg mb-6 print:mb-4 md:mb-4">
-                            Senior Software Engineer
+                            Software Engineer | Frontend
                         </h2>
                         <div className="leading-snug print:text-sm text-oxford-blue-50">
                             Experienced engineer with 12 years of experience front-end focused development with unique
                             experience in data visualization and interactive media and a strong design sensibility. I
                             have deep knowledge of the web platform and standards and am skilled in developing scalable,
                             intuitive and high-performance web applications. I thrive when faced with complex problems
-                            and unknowns and love transforming “what if” into “what is”.
+                            and unknowns and love transforming <b>what if</b> into <b>what is</b>.
                         </div>
                     </div>
                 </div>
