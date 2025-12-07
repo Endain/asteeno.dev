@@ -11,12 +11,13 @@ import {DevicePhoneMobileIcon, EnvelopeIcon, GlobeAltIcon, MapPinIcon, PhoneIcon
 export default function Page() {
     return (
         <div className="flex flex-col justify-center h-full">
-            <header className="flex flex-col bg-gradient-to-r from-oxford-blue-950 to-oxford-blue-900">
+            <header className="flex flex-col bg-gradient-to-r from-zinc-950 to-gray-900">
                 <div className="flex flex-row max-w-base-width self-center">
                     <div className="hidden print:flex md:flex print:basis-2/7 md:basis-2/7 p-8 justify-center">
                         <div className="flex flex-col aspect-square justify-center max-w-full">
                             <div className="flex flex-row aspect-square relative">
-                                <Image className="absolute top-0 left-0 w-full h-full rounded-full object-cover" style={{"overflowClipMargin": "unset"}} src={me}
+                                <Image className="absolute top-0 left-0 w-full h-full rounded-full object-cover"
+                                       style={{"overflowClipMargin": "unset"}} src={me}
                                        alt="Austin Steeno"></Image>
                             </div>
                         </div>
@@ -29,11 +30,11 @@ export default function Page() {
                             Senior Software Engineer
                         </h2>
                         <div className="leading-snug print:text-sm text-oxford-blue-50">
-                            Experienced software engineer with a proven track record in delivering high-quality,
-                            performant user interfaces. Proficient in web standards and skilled in developing scalable,
-                            interactive web applications using various technologies, from JavaScript to cutting-edge
-                            frameworks. Strong design sensibility and a passion for enhancing user and developer
-                            experiences, adept at solving complex problems and architecting robust, scalable solutions.
+                            Experienced engineer with 12 years of experience front-end focused development with unique
+                            experience in data visualization and interactive media and a strong design sensibility. I
+                            have deep knowledge of the web platform and standards and am skilled in developing scalable,
+                            intuitive and high-performance web applications. I thrive when faced with complex problems
+                            and unknowns and love transforming “what if” into “what is”.
                         </div>
                     </div>
                 </div>
@@ -41,7 +42,7 @@ export default function Page() {
             <main
                 className="flex basis-auto flex-grow flex-col-reverse md:flex-row print:flex-row max-w-base-width self-center">
 
-                <section className="flex flex-col basis-2/7 bg-stone-50 pl-8 pr-2 pt-6 pb-10 print:pb-0 print:pr-8">
+                <section className="flex flex-col basis-2/7 bg-zinc-50 pl-8 pr-2 pt-6 pb-10 print:pb-0 print:pr-8">
 
                     <section className="mb-8">
                         <h3 className="text-2xl font-header uppercase mb-3">Personals</h3>
@@ -196,39 +197,47 @@ export default function Page() {
 
                         <Employer link="https://corestack.io/">CoreStack</Employer>
                         <EmploymentPeriod role="Senior Software Engineer" start="2022" end="2025"></EmploymentPeriod>
-                        <Details className="mb-6">Key asset in the Optio3 acquisition, drove front-end design and
-                            implementation with Angular and TypeScript. Enhanced the legacy PHP codebase, developed
-                            performant data visualizations, dashboards, and core UI components, transitioning features
-                            to the new framework and turning high-value concepts into reality.
+                        <Details className="mb-6">Worked cross-functionally with existing engineering teams, product
+                            managers and designers to refresh product frontend to be built on the Angular UI platform
+                            developed at Optio3. Took ownership of a new dashboard drilldown system, refining use cases
+                            and design and driving it from concept to release, adding immense value and marketability to
+                            the corresponding major product release.
                         </Details>
 
                         <Employer
                             link="https://corestack.io/blog/corestack-accelerates-vision-and-growth-with-acquisition-of-optio3/">Optio3</Employer>
                         <EmploymentPeriod role="Senior Software Engineer" start="2018" end="2022"></EmploymentPeriod>
-                        <Details className="mb-6">Worked in a lean, agile startup, focusing on UI design and
-                            implementation with Angular and TypeScript. Developed advanced, high-performance data
-                            visualization tools, expanding options for customers and enabling visualization of
-                            large-scale datasets. Enhanced bespoke canvas-rendered visuals, created and maintained core
-                            UI components, and contributed to the backend in Java and Python.
+                        <Details className="mb-6">Fourth engineering hire. Developed advanced, home-grown, high-performance
+                            data visualization tools, enabling realtime visualization of large-scale datasets,
+                            driving up platform value and enabling use of product by field technicians with mobile
+                            devices. Expanded and relentlessly refined and optimized platform UI components, a key value
+                            factor resulting in company acquisition.
                         </Details>
 
                         <Employer link="https://servicenow.com">ServiceNow</Employer>
                         <EmploymentPeriod role="Senior Software Development Engineer" start="2016"
                                           end="2018"></EmploymentPeriod>
-                        <Details className="mb-2.5">Developed core UI components and data visualization tools for the
-                            CMDB, conducted hiring interviews, and designed an extendable low-code data processing and
-                            visualization pipeline, unlocking new data analysis paradigms for customers.
+                        <Details className="mb-2.5">Developed foundational data visualization components for the newly
+                            formed Service Intelligence team, giving new and useful ways for customers to reason about
+                            service status. Conducted hiring interviews and gave technical talks, increasing multiple
+                            teams capacity for frontend development. Designed and implemented an extendable, low-code
+                            data processing and visualization pipeline, unlocking new data analysis paradigms for
+                            customers and laying the foundation for further machine learning features.
                         </Details>
                         <EmploymentPeriod role="Software Development Engineer" start="2014"
                                           end="2016"></EmploymentPeriod>
-                        <Details className="mb-2.5">Led CMDB Service Mapping development (showcased in the Knowledge
-                            keynote), contributed to Neebula integration, and created core Angular.js UI components for
-                            other CMDB developers, enhancing product continuity and application performance.
+                        <Details className="mb-2.5">Lead engineer behind CMDB Service Mapping UI development (showcased
+                            in Knowledge keynote). Travelled abroad to accelerate integration of acquired company
+                            Neebula, rewrote their core graph render in JavaScript and conducted crash courses,
+                            resulting in ahead-of-schedule integration and product release. Identified gaps in
+                            transition to AngularJS frontend and created missing components, resulting in better product
+                            continuity and accelerated development pace for the team.
                         </Details>
                         <EmploymentPeriod role="Associate Software Development Engineer" start="2013"
                                           end="2014"></EmploymentPeriod>
-                        <Details>Prototyped the CMDB Dashboard with D3 and a custom drag-and-drop system, drove
-                            Angular.js adoption, and contributed to CMDB application development.
+                        <Details>Bootstrapped a WYSIWYG dashboard system for the CMDB product, resulting in the green
+                            light to develop cutting edge visualization and navigation features, proved the viability
+                            and utility of D3 within the product space.
                         </Details>
                     </section>
 
@@ -237,19 +246,12 @@ export default function Page() {
 
                         <Project date="2024">Video Processing Pipeline</Project>
                         <Details className="mb-6">Developed an automated video processing pipeline using FFMPEG and
-                            Node.js, hosted on Firebase/GCP. The system processed raw sports footage from Firebase Cloud
-                            Storage, referenced gameplay rundowns in Firestore, and generated streaming-optimized
-                            highlight clips stored back in Cloud Storage, with metadata in Firestore. Containerized with
-                            Docker and deployed on Google Cloud Run with a nightly trigger.
+                            Node.js, hosted on Firebase/GCP.
                         </Details>
 
                         <Project date="2023">Twitch Election System</Project>
                         <Details>Developed a scalable real-time voting and virtual currency system with dynamic
-                            overlays, web-based control panels, a Twitch extension, and a cloud-hosted backend. Tracked
-                            viewers and awarded virtual currency for subscriptions, maintaining detailed transaction and
-                            voting records for leaderboards. Created an SDK to generate a type-safe ORM from SQL schema.
-                            Utilized skills in Websockets, Webhooks, API development, Node.js, TypeScript, WebGL, and
-                            SQL.
+                            overlays, web-based control panels, a Twitch extension, and a cloud-hosted backend.
                         </Details>
                     </section>
 

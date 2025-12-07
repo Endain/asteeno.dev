@@ -16,7 +16,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body
-            className={`${contentFont.className} ${headerFont.variable} bg-stone-200 text-oxford-blue-900 print:w-print-width print:h-print-height`}>
+            className={`${contentFont.className} ${headerFont.variable} bg-zinc-200 text-oxford-blue-900 print:w-print-width print:h-print-height`}>
         <header className="hidden sticky top-0 bg-gradient-to-r from-oxford-blue-950 to-oxford-blue-900 text-white z-10 flex flex-row font-header font-medium text-lg uppercase shadow-sm">
             <div className="flex flex-col pl-3 pr-6 justify-center">
                 <h1 className="self-center font-header font-medium text-xl/4 text-whtie">

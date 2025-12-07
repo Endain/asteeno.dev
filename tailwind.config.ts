@@ -33,6 +33,7 @@ const config: Config = {
             },
             fontSize: {
                 '2xs': '0.66rem',
+                'smaller': '0.95rem'
             },
             screens: {
                 print: {raw: 'print'},
