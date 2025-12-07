@@ -30,11 +30,11 @@ export default function Page() {
                             Software Engineer | Frontend
                         </h2>
                         <div className="leading-snug print:text-sm text-oxford-blue-50">
-                            Experienced engineer with 12 years of experience front-end focused development with unique
-                            experience in data visualization and interactive media and a strong design sensibility. I
-                            have deep knowledge of the web platform and standards and am skilled in developing scalable,
-                            intuitive and high-performance web applications. I thrive when faced with complex problems
-                            and unknowns and love transforming <b>what if</b> into <b>what is</b>.
+                            Dedicated engineer with 12 years of hands-on, professional experience in frontend focused
+                            development. I bring unique expertise in data visualization and interactive media, a strong
+                            design sensibility, and in-depth knowledge of the web platform and standards. I am skilled
+                            in developing scalable, intuitive and high-performance web applications. I thrive when faced
+                            with complex problems and unknowns, and transforming <b>what if</b> into <b>what is</b>.
                         </div>
                     </div>
                 </div>
@@ -207,7 +207,8 @@ export default function Page() {
                         <Employer
                             link="https://corestack.io/blog/corestack-accelerates-vision-and-growth-with-acquisition-of-optio3/">Optio3</Employer>
                         <EmploymentPeriod role="Senior Software Engineer" start="2018" end="2022"></EmploymentPeriod>
-                        <Details className="mb-6">Fourth engineering hire. Developed advanced, home-grown, high-performance
+                        <Details className="mb-6">Fourth engineering hire. Developed advanced, home-grown,
+                            high-performance
                             data visualization tools, enabling realtime visualization of large-scale datasets,
                             driving up platform value and enabling use of product by field technicians with mobile
                             devices. Expanded and relentlessly refined and optimized platform UI components, a key value
