@@ -7,6 +7,7 @@ import Project from "@/components/project";
 import Image from "next/image";
 import me from './me.jpg'
 import {DevicePhoneMobileIcon, EnvelopeIcon, GlobeAltIcon, MapPinIcon, PhoneIcon} from "@heroicons/react/24/outline";
+import SerialLine from "@/components/serial-line";
 import SerialText from "@/components/serial-text";
 
 export default function Page() {
@@ -38,7 +39,10 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <SerialText>Some test message to reveal</SerialText>
+                <SerialText>
+                    Some test message to reveal
+                </SerialText>
+                <SerialLine>Some test message to reveal</SerialLine>
             </header>
             <main
                 className="flex basis-auto flex-grow flex-col-reverse md:flex-row print:flex-row max-w-base-width self-center">
