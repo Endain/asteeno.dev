@@ -26,19 +26,19 @@ export default function Page() {
                         <h1 className="leading-none font-header font-medium whitespace-nowrap text-5xl print:text-4xl md:text-4xl text-white ">
                             Austin Steeno
                         </h1>
-                        <h2 className="leading-none font-header whitespace-nowrap text-white text-2xl print:text-lg md:text-lg mb-6 print:mb-4 md:mb-4">
-                            Senior Software Engineer | Frontend Focus
+                        <h2 className="leading-none font-header text-white text-2xl print:text-lg md:text-lg mb-6 print:mb-4 md:mb-4">
+                            <span className="inline-block">Senior Software Engineer,</span> <span
+                            className="inline-block">Frontend Focus</span>
                         </h2>
                         <div className="leading-snug print:text-sm text-oxford-blue-50">
-                            With 12 years of professional, hands-on experience, I am skilled in developing scalable, intuitive, high-performance
-                            web applications. I advanced quickly at ServiceNow where my work was presented to founder
-                            Fred Luddy, as well as showcased multiple times at the company's annual keynote. I also
-                            spent 4 years at an IoT startup and assisted in its post-acquisition integration. I bring
-                            deep expertise in frontend-focused development, data visualization, and interactive media,
-                            supported by a strong design sensibility and a thorough understanding of the web platform
-                            and its standards. I thrive when given autonomy and faced with complex problems and
-                            unknowns, transforming <b>what if</b> into <b>what
-                            is</b>.
+                            With 12 years of professional, hands-on experience, I am skilled in developing scalable, intuitive,
+                            high-performance web applications. I advanced quickly at ServiceNow where my work was
+                            presented to founder Fred Luddy, as well as showcased multiple times at the company's annual
+                            keynote. Later, I spent 4 years at a successful IoT startup and assisted in its
+                            post-acquisition integration. I bring deep expertise in frontend development, data
+                            visualization, and interactive media, supported by a strong design sensibility and a
+                            thorough understanding of the web platform and its standards. I thrive when given autonomy,
+                            faced with complex problems and unknowns, and transforming <b>what if</b> into <b>what is</b>.
                         </div>
                     </div>
                 </div>
