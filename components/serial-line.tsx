@@ -3,7 +3,7 @@
 import {monoFont} from "@/app/fonts";
 import React, {useEffect, useRef, useState} from "react";
 
-interface SerialLineProps {
+export interface SerialLineProps {
     speed?: number,
     delay?: number,
     jitter?: number,
@@ -54,13 +54,13 @@ export default function SerialLine({speed = 40, delay = 0, jitter = 50, children
     }, []);
 
     return (
-        <div className={monoFont.className}>{text}</div>
+        <div>{text}</div>
     );
 }
 
 function revealText(source: string, masked: Array<string>, start: number, end: number): string {
     // Iterate over the range and unmask characters
-    for(let i = start; i <= end; i++) {
+    for(let i = start; i < end; i++) {
         masked[i] = source[i];
     }
 

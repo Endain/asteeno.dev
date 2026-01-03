@@ -9,6 +9,7 @@ import me from './me.jpg'
 import {DevicePhoneMobileIcon, EnvelopeIcon, GlobeAltIcon, MapPinIcon, PhoneIcon} from "@heroicons/react/24/outline";
 import SerialLine from "@/components/serial-line";
 import SerialText from "@/components/serial-text";
+import {monoFont} from "@/app/fonts";
 
 export default function Page() {
     return (
@@ -39,8 +40,8 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <SerialText>
-                    Some test message to reveal
+                <SerialText className={`${monoFont.className} max-w-2xl`}>
+                    Extended kindness trifling remember he confined outlived if. Assistance sentiments yet unpleasing say. Open they an busy they my such high. An active dinner wishes at unable hardly no talked on. Immediate him her resolving his favourite. Wished denote abroad at branch at. At every tiled on ye defer do. No attention suspected oh difficult. Fond his say old meet cold find come whom. The sir park sake bred. Wonder matter now can estate esteem assure fat roused. Am performed on existence as discourse is. Pleasure friendly at marriage blessing or.
                 </SerialText>
                 <SerialLine>Some test message to reveal</SerialLine>
             </header>
