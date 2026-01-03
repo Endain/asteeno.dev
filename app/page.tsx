@@ -27,14 +27,18 @@ export default function Page() {
                             Austin Steeno
                         </h1>
                         <h2 className="leading-none font-header whitespace-nowrap text-white text-2xl print:text-lg md:text-lg mb-6 print:mb-4 md:mb-4">
-                            Software Engineer | Frontend
+                            Senior Software Engineer | Frontend Focus
                         </h2>
                         <div className="leading-snug print:text-sm text-oxford-blue-50">
-                            Dedicated engineer with 12 years of hands-on, professional experience in frontend focused
-                            development. I bring unique expertise in data visualization and interactive media, a strong
-                            design sensibility, and in-depth knowledge of the web platform and standards. I am skilled
-                            in developing scalable, intuitive and high-performance web applications. I thrive when faced
-                            with complex problems and unknowns, and transforming <b>what if</b> into <b>what is</b>.
+                            With 12 years of professional, hands-on experience, I am skilled in developing scalable, intuitive, high-performance
+                            web applications. I advanced quickly at ServiceNow where my work was presented to founder
+                            Fred Luddy, as well as showcased multiple times at the company's annual keynote. I also
+                            spent 4 years at an IoT startup and assisted in its post-acquisition integration. I bring
+                            deep expertise in frontend-focused development, data visualization, and interactive media,
+                            supported by a strong design sensibility and a thorough understanding of the web platform
+                            and its standards. I thrive when given autonomy and faced with complex problems and
+                            unknowns, transforming <b>what if</b> into <b>what
+                            is</b>.
                         </div>
                     </div>
                 </div>
